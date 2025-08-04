@@ -25,7 +25,7 @@ export default function Skills() {
       role: "Intern Software Engineer",
       period: "May 2025 - Present",
       description:
-        "Developed a modern, SEO-optimized software company website using Next.js, TypeScript, and Strapi, enhancing content flexibility and performance. Engineered a SaaS platform using Laravel, Filament, and Next.js with TypeScript—designed as a multi tenant e-commerce app—empowering rural and local shop owners to easily create, manage, and customize their own e-commerce websites. Focused on modular architecture, seamless user experience, and full responsiveness to ensure accessibility across devices. Enabled multi-tenant capabilities, storefront branding, and real-time updates to drive business growth in underserved regions.",
+        "Built a modern, SEO-friendly software company website using Next.js, TypeScript, and Strapi for better performance and content management. Also developed a SaaS e-commerce platform with Laravel, Filament, and Next.js (TypeScript) to help rural and local shop owners easily create and manage their own online stores. The platform supports multi-tenancy, custom branding, and real-time updates, with a focus on modular design, smooth UX, and full responsiveness for all devices.",
       logo: "/assets/wits.png",
     },
     // {
@@ -86,38 +86,51 @@ export default function Skills() {
                 style={{ WebkitTextStroke: "1px black" }}> My </span> <span className="font-extrabold">Experience</span>
         </motion.h2>
 
-        {/* Experience Cards */}
-        <div className="px-5 lg:px-28 my-8 lg:mt-16 space-y-10">
-          {experiences.map((exp, index) => (
-            <motion.div
-              key={exp.id}
-              className="bg-black p-5 border border-[#D4D4D8] rounded-md hover:bg-[#27272A] transition-all cursor-pointer"
-              initial={{ opacity: 0, x: -20 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              transition={{
-                type: "spring",
-                stiffness: 100,
-                damping: 10,
-                delay: index * 0.2,
-              }}
-              viewport={{ once: true }}
-            >
-              <div className="flex justify-between flex-col items-start lg:flex-row lg:items-center">
-                <div className="flex items-center gap-5">
-                  <img className="w-7" src={exp.logo} alt="" />
-                  <h2 className="font-semibold text-white text-lg lg:text-xl">
-                    {exp.role} at {exp.company}
-                  </h2>
+        {/* Experience Timeline */}
+        <div className="px-5 lg:px-28 my-8 lg:mt-16">
+          <div className="relative">
+            {/* Timeline line */}
+            <div className="absolute left-4 lg:left-8 top-0 bottom-0 w-0.5 bg-gray-300"></div>
+            
+            {experiences.map((exp, index) => (
+              <motion.div
+                key={exp.id}
+                className="relative flex items-start mb-12 last:mb-0"
+                initial={{ opacity: 0, x: -20 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                transition={{
+                  type: "spring",
+                  stiffness: 100,
+                  damping: 10,
+                  delay: index * 0.2,
+                }}
+                viewport={{ once: true }}
+              >
+                {/* Timeline dot */}
+                <div className="relative z-10 flex-shrink-0 w-8 h-8 lg:w-16 lg:h-16 rounded-full bg-black border-2 border-white flex items-center justify-center">
+                  <img className="w-4 h-4 lg:w-8 lg:h-8 rounded-full object-cover" src={exp.logo} alt={exp.company} />
                 </div>
-                <span className="text-[#D4D4D8] font-semibold text-sm mt-4 lg:mt-0 lg:text-base">
-                  {exp.period}
-                </span>
-              </div>
-              <p className="text-[#D4D4D8] mt-6 text-sm/6 lg:text-base font-light">
-                {exp.description}
-              </p>
-            </motion.div>
-          ))}
+                
+                {/* Experience card */}
+                <div className="ml-6 lg:ml-8 flex-1">
+                  <div className="bg-white border-2 border-black rounded-lg p-6 lg:p-8 shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-[1.02]">
+                    <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between mb-4">
+                      <div>
+                        <h3 className="text-xl lg:text-2xl font-bold text-black">{exp.role}</h3>
+                        <p className="text-lg lg:text-xl text-gray-700 mt-1">{exp.company}</p>
+                      </div>
+                      <span className="inline-block bg-black text-white px-4 py-2 rounded-full text-sm font-semibold mt-2 lg:mt-0">
+                        {exp.period}
+                      </span>
+                    </div>
+                    <p className="text-gray-600 text-sm lg:text-base leading-relaxed">
+                      {exp.description}
+                    </p>
+                  </div>
+                </div>
+              </motion.div>
+            ))}
+          </div>
         </div>
 
       </div>

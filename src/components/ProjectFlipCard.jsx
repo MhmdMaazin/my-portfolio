@@ -34,6 +34,7 @@ export default function ProjectFlipCard({ project, index }) {
         className="group relative h-[400px] w-full lg:w-full [perspective:2000px] cursor-pointer"
         onMouseEnter={() => setIsFlipped(true)}
         onMouseLeave={() => setIsFlipped(false)}
+        // onTouchStart={() => setIsFlipped(!isFlipped)}
       >
         <div
           className={cn(
