@@ -1,7 +1,18 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import ReactMarkdown from 'react-markdown';
 
 export default function About() {
+  const aboutContent = `
+I'm Mohammed **Maazin**, a passionate and dedicated **Computer** **Science** Student with a strong interest in web development, artificial intelligence, and problem-solving.
+
+My web development journey started in **2021**, and since then, I've continuously evolved, taking on new challenges and keeping up with the latest technologies. Today, I build **cutting-edge web applications** using **Next.js, TypeScript, TailwindCSS, Supabase, and more**.
+
+I'm a **fast learner** and **problem-solver** at heart. I love diving deep into complex problems and finding elegant solutions. Whether it's building web applications, optimizing algorithms, or contributing to open-source projects, I'm always up for the challenge.
+
+I believe in continuous growth and collaboration, and I’m always open to new opportunities and challenges. Let’s connect and create something extraordinary together! Feel free to contact me check out my projects on **GitHub**.
+  `;
+
   return (
     <div className="px-5 lg:px-28 flex justify-between flex-col lg:flex-row" id="about">
       <motion.div
@@ -22,20 +33,12 @@ export default function About() {
         viewport={{ once: true }}
       >
         <h2 className="lg:text-4xl text-2xl mt-4 lg:mt-0">
-          About <span className="font-extrabold">Me</span>
+          <span className="text-white font-extrabold"
+                style={{ WebkitTextStroke: "1px black" }}> About</span> <span className="font-extrabold">Me</span>
         </h2>
-
-        <p className="text-[#71717A] text-sm/6 lg:text-base mt-5 lg:mt-10">
-          I'm a passionate full-stack developer specializing in **React.js & Node.js**. I thrive on blending technical expertise with sleek UI/UX design to build high-performing, user-friendly applications.
-        </p>
-
-        <p className="text-[#71717A] text-sm/6 lg:text-base mt-3 lg:mt-5">
-          My web development journey started in **2015**, and since then, I've continuously evolved, taking on new challenges and keeping up with the latest technologies. Today, I build **cutting-edge web applications** using **Next.js, TypeScript, NestJS, TailwindCSS, Supabase, and more**.
-        </p>
-
-        <p className="text-[#71717A] text-sm/6 lg:text-base mt-3 lg:mt-5">
-          Beyond coding, I enjoy sharing insights on **Twitter**, engaging with **Indie Hackers**, and following the journey of **early-stage startups**. Feel free to follow me on **Twitter** or check out my projects on **GitHub**.
-        </p>
+        <div className="text-[#71717A] text-sm/6 lg:text-base mt-5 lg:mt-10 space-y-3 lg:space-y-5">
+          <ReactMarkdown>{aboutContent}</ReactMarkdown>
+        </div>
       </motion.div>
     </div>
   );

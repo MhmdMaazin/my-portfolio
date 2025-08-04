@@ -25,7 +25,8 @@ export default function Contact() {
         transition={{ duration: 0.8 }}
         className='text-2xl lg:text-4xl text-center'
       >
-        Contact <span className='font-extrabold'>Me</span>
+        <span className="text-white font-extrabold"
+                style={{ WebkitTextStroke: "1px black" }}> Contact</span> <span className='font-extrabold'>Me</span>
       </motion.h2>
 
       <div className='flex justify-between items-center mt-8 lg:mt-16 flex-col lg:flex-row'>
@@ -56,17 +57,44 @@ export default function Contact() {
               </motion.button>
 
               <div className='flex items-center gap-x-2 lg:gap-x-5'>
-                {[BiLogoGmail, IoLogoLinkedin, IoLogoTwitter, BsGithub].map((Icon, index) => (
-                  <motion.a
-                    key={index}
-                    href="#"
-                    className="bg-white p-2 lg:p-3 rounded border-2 border-black"
-                    whileHover={{ scale: 1.1, backgroundColor: "#000", color: "#fff" }}
-                    whileTap={{ scale: 0.9 }}
-                  >
-                    <Icon className="w-4 h-4 lg:w-5 lg:h-5" />
-                  </motion.a>
-                ))}
+                <motion.a
+                  href="mailto:mazimaazin@gmail.com"
+                  className="bg-white p-2 lg:p-3 rounded border-2 border-black"
+                  whileHover={{ scale: 1.1, backgroundColor: "#000", color: "#fff" }}
+                  whileTap={{ scale: 0.9 }}
+                >
+                  <BiLogoGmail className="w-4 h-4 lg:w-5 lg:h-5" />
+                </motion.a>
+                <motion.a
+                  href="https://www.linkedin.com/in/mohammed-maazin"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="bg-white p-2 lg:p-3 rounded border-2 border-black"
+                  whileHover={{ scale: 1.1, backgroundColor: "#000", color: "#fff" }}
+                  whileTap={{ scale: 0.9 }}
+                >
+                  <IoLogoLinkedin className="w-4 h-4 lg:w-5 lg:h-5" />
+                </motion.a>
+                {/* <motion.a
+                  href="https://twitter.com/your-handle"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="bg-white p-2 lg:p-3 rounded border-2 border-black"
+                  whileHover={{ scale: 1.1, backgroundColor: "#000", color: "#fff" }}
+                  whileTap={{ scale: 0.9 }}
+                >
+                  <IoLogoTwitter className="w-4 h-4 lg:w-5 lg:h-5" />
+                </motion.a> */}
+                <motion.a
+                  href="https://github.com/MhmdMaazin"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="bg-white p-2 lg:p-3 rounded border-2 border-black"
+                  whileHover={{ scale: 1.1, backgroundColor: "#000", color: "#fff" }}
+                  whileTap={{ scale: 0.9 }}
+                >
+                  <BsGithub className="w-4 h-4 lg:w-5 lg:h-5" />
+                </motion.a>
               </div>
             </motion.div>
           </form>
@@ -94,7 +122,7 @@ export default function Contact() {
               <span className='border-2 transition-all border-transparent group-hover:border-black rounded-full p-1'>
                 <IoMdMail className="w-4 h-4 lg:w-5 lg:h-5" />
               </span>
-              Youremail@gmail.com
+              mazimaazin@gmail.com
             </motion.a>
 
             <motion.a
@@ -105,7 +133,7 @@ export default function Contact() {
               <span className='border-2 transition-all border-transparent group-hover:border-black rounded-full p-[5px]'>
                 <FaPhone className="w-3 h-3 lg:w-4 lg:h-4" />
               </span>
-              1234567890
+              +94765674926
             </motion.a>
           </div>
         </motion.div>

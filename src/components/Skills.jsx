@@ -1,43 +1,42 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { motion } from "framer-motion";
-import { FaJs, FaReact, FaNodeJs, FaPython, FaDatabase,FaJava } from "react-icons/fa";
-import { BiLogoPostgresql } from "react-icons/bi";
+import { FaJs, FaReact, FaNodeJs, FaPython, FaDatabase } from "react-icons/fa";
 import { RiNextjsFill,RiTailwindCssFill } from "react-icons/ri";
-import { CgFigma } from "react-icons/cg";
+import { SiTypescript,SiStrapi,SiLaravel  } from "react-icons/si";
 
 export default function Skills() {
   const [skills] = useState([
-    { id: 1, name: "JavaScript", icon: <FaJs size={50} /> },
-    { id: 2, name: "React", icon: <FaReact size={50} /> },
-    { id: 3, name: "Node.js", icon: <FaNodeJs size={50} /> },
-    { id: 4, name: "Python", icon: <FaPython size={50} /> },
-    { id: 5, name: "MongoDB", icon: <FaDatabase size={50} /> },
-    { id: 6, name: "Java", icon: <FaJava size={50} /> },
-    { id: 7, name: "Postgresql", icon: <BiLogoPostgresql size={50} /> },
-    { id: 8, name: "Next.js", icon: <RiNextjsFill size={50} /> },
+    { id: 1,name: "Next.js", icon: <RiNextjsFill size={50} /> },
+    { id: 2, name: "TypeScript", icon: <SiTypescript size={50} /> },
+    { id: 3, name: "React", icon: <FaReact size={50} /> },
+    { id: 4, name: "Node.js", icon: <FaNodeJs size={50} /> },
+    { id: 5, name: "Python", icon: <FaPython size={50} /> },
+    { id: 6, name: "MongoDB", icon: <FaDatabase size={50} /> },
+    { id: 7, name: "Strapi CMS", icon: <SiStrapi size={50} /> },
+    { id: 8,  name: "JavaScript", icon: <FaJs size={50} /> },
     { id: 9, name: "Tailwind", icon: <RiTailwindCssFill size={50} /> },
-    { id: 10, name: "Figma", icon: <CgFigma size={50} /> },
+    { id: 10, name: "Laravel", icon: <SiLaravel size={50} /> },
   ]);
 
   const [experiences] = useState([
     {
       id: 1,
-      company: "Google",
-      role: "Lead Software Engineer",
-      period: "Nov 2019 - Present",
+      company: "Witsberry",
+      role: "Intern Software Engineer",
+      period: "May 2025 - Present",
       description:
-        "Developed innovative solutions for Google's core search algorithms, optimizing search accuracy and user experience. Developed innovative solutions for Google's core search algorithms, optimizing search accuracy and user experience. Developed innovative solutions for Google's core search algorithms, optimizing search accuracy and user experience. Developed innovative solutions for Google's core search algorithms, optimizing search accuracy and user experience.",
-      logo: "/assets/google.svg",
+        "Developed a modern, SEO-optimized software company website using Next.js, TypeScript, and Strapi, enhancing content flexibility and performance. Engineered a SaaS platform using Laravel, Filament, and Next.js with TypeScript—designed as a multi tenant e-commerce app—empowering rural and local shop owners to easily create, manage, and customize their own e-commerce websites. Focused on modular architecture, seamless user experience, and full responsiveness to ensure accessibility across devices. Enabled multi-tenant capabilities, storefront branding, and real-time updates to drive business growth in underserved regions.",
+      logo: "/assets/wits.png",
     },
-    {
-      id: 2,
-      company: "Youtube",
-      role: "Software Engineer",
-      period: "Jan 2017 - Oct 2019",
-      description:
-        "At Youtube, I served as a  Software Engineer, focusing on the design and implementation of backend systems for the social media giant's dynamic platform. Working on projects that involved large-scale data processing and user engagement features, I leveraged my expertise to ensure seamless functionality and scalability.",
-      logo: "/assets/youtube.svg",
-    },
+    // {
+    //   id: 2,
+    //   company: "Youtube",
+    //   role: "Software Engineer",
+    //   period: "Jan 2017 - Oct 2019",
+    //   description:
+    //     "At Youtube, I served as a  Software Engineer, focusing on the design and implementation of backend systems for the social media giant's dynamic platform. Working on projects that involved large-scale data processing and user engagement features, I leveraged my expertise to ensure seamless functionality and scalability.",
+    //   logo: "/assets/youtube.svg",
+    // },
   ]);
 
   return (
@@ -51,7 +50,8 @@ export default function Skills() {
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
         >
-          My <span className="font-extrabold">Skills</span>
+          <span className="text-white font-extrabold"
+                style={{ WebkitTextStroke: "1px black" }}> My </span> <span className="font-extrabold">Skills</span>
         </motion.h2>
 
         {/* Skill Cards */}
@@ -74,15 +74,16 @@ export default function Skills() {
       </div>
 
       {/* Experience Section */}
-      <div className="bg-black w-full my-8 py-8 lg:my-16 lg:py-16">
+      <div className="w-full my-8 py-8 lg:my-16 lg:py-16">
         <motion.h2
-          className="text-2xl lg:text-4xl text-center text-white"
+          className="text-2xl lg:text-4xl text-center"
           initial={{ opacity: 0, y: -20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
         >
-          My <span className="font-extrabold">Experience</span>
+          <span className="text-white font-extrabold"
+                style={{ WebkitTextStroke: "1px black" }}> My </span> <span className="font-extrabold">Experience</span>
         </motion.h2>
 
         {/* Experience Cards */}

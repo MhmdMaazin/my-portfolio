@@ -33,7 +33,7 @@ export default function Home() {
             <motion.h2 variants={{ hidden: { opacity: 0, y: 10 }, visible: { opacity: 1, y: 0 } }}>
               Hello, <TypeAnimation
                 sequence={[
-                  'I am Sathish Kumar',
+                  'I am Maazin',
                   1000,
                   // 'I am a Web Developer',
                   // 1000,
@@ -54,9 +54,9 @@ export default function Home() {
                 Developer
               </span>
             </motion.h2>
-            <motion.h2 variants={{ hidden: { opacity: 0, y: 10 }, visible: { opacity: 1, y: 0 } }}>
-              Based In <span className="font-extrabold">India.</span>
-            </motion.h2>
+            {/* <motion.h2 variants={{ hidden: { opacity: 0, y: 10 }, visible: { opacity: 1, y: 0 } }}>
+              Creative <span className="font-extrabold">Web Developer.</span>
+            </motion.h2> */}
           </motion.div>
 
           <motion.p
@@ -74,10 +74,17 @@ export default function Home() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.8, duration: 1 }}
           >
-            {[BiLogoGmail, IoLogoLinkedin, IoLogoTwitter, BsGithub].map((Icon, index) => (
+            {[
+              { Icon: BiLogoGmail, link: "mailto:mazimaazin@gmail.com" },
+              { Icon: IoLogoLinkedin, link: "https://www.linkedin.com/in/mohammed-maazin" },
+              // { Icon: IoLogoTwitter, link: "https://twitter.com/your-handle" },
+              { Icon: BsGithub, link: "https://github.com/MhmdMaazin" }
+            ].map(({ Icon, link }, index) => (
               <motion.a
                 key={index}
-                href="#"
+                href={link}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="bg-white p-2 lg:p-3 rounded border-2 border-black"
                 whileHover={{ scale: 1.1, backgroundColor: "#000", color: "#fff" }}
                 whileTap={{ scale: 0.9 }}
@@ -89,12 +96,12 @@ export default function Home() {
         </motion.div>
 
         <motion.div
-          className="lg:w-[55%] w-full"
+          className="lg:w-[40%] w-full"
           initial={{ opacity: 0, x: 50 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 1, ease: "easeInOut" }}
         >
-          <img className="h-full w-full" src="/assets/hero-vector.svg" alt="Hero Vector" />
+          <img className="h-full w-full" src="/assets/hero.png" alt="Hero Vector" />
         </motion.div>
       </div>
     </div>
