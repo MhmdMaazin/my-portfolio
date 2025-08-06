@@ -3,7 +3,7 @@ import { cn } from '@/lib/utils';
 import { motion } from 'framer-motion';
 import { FaJs, FaReact, FaNodeJs, FaPython, FaDatabase, FaGithub } from "react-icons/fa";
 import { RiNextjsFill, RiTailwindCssFill } from "react-icons/ri";
-import { SiTypescript } from "react-icons/si";
+import { SiTypescript, SiFirebase, SiVite } from "react-icons/si";
 import { TbWorld } from "react-icons/tb";
 
 export default function ProjectFlipCard({ project, index }) {
@@ -13,6 +13,8 @@ export default function ProjectFlipCard({ project, index }) {
     "React": <FaReact size={16} />,
     "TypeScript": <SiTypescript size={16} />,
     "Node.js": <FaNodeJs size={16} />,
+    "Firebase": <SiFirebase size={16} />,
+    "Vite": <SiVite size={16} />,
     "MongoDB": <FaDatabase size={16} />,
     "Next.js": <RiNextjsFill size={16} />,
     "Python": <FaPython size={16} />,
@@ -138,7 +140,7 @@ export default function ProjectFlipCard({ project, index }) {
                       rel="noopener noreferrer"
                     >
                       <TbWorld size={18} />
-                      View Project
+                      Live Project
                     </a>
                     <a 
                       href={project.github} 

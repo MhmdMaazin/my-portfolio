@@ -4,12 +4,16 @@ import ProjectFlipCard from './ProjectFlipCard';
 const projects = [
   {
     id: 1,
-    title: "Crypto Screener Application",
-    description: "A powerful tool for tracking and analyzing cryptocurrency trends in real-time.",
+    title: "ChemLab - AI-Powered Chemistry Learning Platform",
+    description: "An AI-powered app for learning chemistry with interactive tools, quizzes, and a smart chatbot.",
     image: "/assets/project1.png",
-    link: "#",
-    github: "#",
-    technologies: ["React", "TypeScript", "Node.js", "MongoDB"]
+    link: "https://chem--lab.vercel.app/",
+    github: "https://github.com/MhmdMaazin/CHEM-LAB",
+    technologies: ["React", "TypeScript", "Node.js", "Firebase", "Vite", "Tailwind", "Python"]
+
+
+
+
   },
   {
     id: 2,
