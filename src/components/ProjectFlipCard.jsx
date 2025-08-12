@@ -3,7 +3,8 @@ import { cn } from '@/lib/utils';
 import { motion } from 'framer-motion';
 import { FaJs, FaReact, FaNodeJs, FaPython, FaDatabase, FaGithub } from "react-icons/fa";
 import { RiNextjsFill, RiTailwindCssFill } from "react-icons/ri";
-import { SiTypescript, SiFirebase, SiVite } from "react-icons/si";
+import { SiTypescript, SiFirebase, SiVite, SiZod, SiDrizzle } from "react-icons/si";
+import { FiFramer } from "react-icons/fi";
 import { TbWorld } from "react-icons/tb";
 
 export default function ProjectFlipCard({ project, index }) {
@@ -19,7 +20,10 @@ export default function ProjectFlipCard({ project, index }) {
     "Next.js": <RiNextjsFill size={16} />,
     "Python": <FaPython size={16} />,
     "Tailwind": <RiTailwindCssFill size={16} />,
-    "JavaScript": <FaJs size={16} />
+    "JavaScript": <FaJs size={16} />,
+    "Zod": <SiZod size={16} />,
+    "Framer": <FiFramer size={16} />,
+    "Drizzle": <SiDrizzle size={16} />
   };
 
   return (
@@ -142,15 +146,17 @@ export default function ProjectFlipCard({ project, index }) {
                       <TbWorld size={18} />
                       Live Project
                     </a>
-                    <a 
-                      href={project.github} 
-                      className="inline-flex items-center gap-2 px-4 py-2 bg-zinc-800 dark:bg-zinc-700 text-white rounded-lg hover:bg-zinc-700 dark:hover:bg-zinc-600 transition-colors duration-200"
-                      target="_blank" 
-                      rel="noopener noreferrer"
-                    >
-                      <FaGithub size={18} />
-                      GitHub
-                    </a>
+                    {project.github && (
+                      <a 
+                        href={project.github} 
+                        className="inline-flex items-center gap-2 px-4 py-2 bg-zinc-800 dark:bg-zinc-700 text-white rounded-lg hover:bg-zinc-700 dark:hover:bg-zinc-600 transition-colors duration-200"
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                      >
+                        <FaGithub size={18} />
+                        GitHub
+                      </a>
+                    )}
                   </div>
                 </div>
             </div>

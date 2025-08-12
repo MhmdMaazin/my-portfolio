@@ -17,18 +17,20 @@ const projects = [
   },
   {
     id: 2,
-    title: "Stock Market Dashboard",
-    description: "An interactive dashboard to monitor stock prices and market trends efficiently.",
-    image: "/assets/project1.png",
-    link: "#",
-    github: "#",
-    technologies: ["Next.js", "TypeScript", "Python", "Tailwind"]
+    title: "Game Grabber: Free Game Tracker",
+    description: "Retro-themed web app showing real-time free game giveaways from multiple platforms via API.",
+
+    image: "/assets/project2.png",
+    link: "https://game-grabber.vercel.app/",
+    github: "https://github.com/MhmdMaazin/Game-Grabber",
+    technologies: ["Next.js", "TypeScript", "Zod", "Tailwind", "React", "Framer", "Drizzle"]
+
   },
   {
     id: 3,
     title: "E-Commerce Platform",
     description: "A modern e-commerce solution with real-time inventory management and secure payments.",
-    image: "/assets/project1.png",
+    image: "/assets/project3.png",
     link: "#",
     github: "#",
     technologies: ["React", "Node.js", "MongoDB", "Tailwind"]
