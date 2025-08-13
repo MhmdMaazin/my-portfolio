@@ -3,7 +3,7 @@ import { cn } from '@/lib/utils';
 import { motion } from 'framer-motion';
 import { FaJs, FaReact, FaNodeJs, FaPython, FaDatabase, FaGithub } from "react-icons/fa";
 import { RiNextjsFill, RiTailwindCssFill } from "react-icons/ri";
-import { SiTypescript, SiFirebase, SiVite, SiZod, SiDrizzle } from "react-icons/si";
+import { SiTypescript, SiFirebase, SiVite, SiZod, SiDrizzle, SiStrapi, SiMysql } from "react-icons/si";
 import { FiFramer } from "react-icons/fi";
 import { TbWorld } from "react-icons/tb";
 
@@ -23,7 +23,9 @@ export default function ProjectFlipCard({ project, index }) {
     "JavaScript": <FaJs size={16} />,
     "Zod": <SiZod size={16} />,
     "Framer": <FiFramer size={16} />,
-    "Drizzle": <SiDrizzle size={16} />
+    "Drizzle": <SiDrizzle size={16} />,
+    "Strapi": <SiStrapi size={16} />,
+    "MySQL": <SiMysql size={16} />
   };
 
   return (

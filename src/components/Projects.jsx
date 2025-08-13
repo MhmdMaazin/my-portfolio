@@ -17,7 +17,7 @@ const projects = [
   },
   {
     id: 2,
-    title: "Game Grabber: Free Game Tracker",
+    title: "Game Grabber - Free Game Tracker",
     description: "Retro-themed web app showing real-time free game giveaways from multiple platforms via API.",
 
     image: "/assets/project2.png",
@@ -28,12 +28,15 @@ const projects = [
   },
   {
     id: 3,
-    title: "E-Commerce Platform",
-    description: "A modern e-commerce solution with real-time inventory management and secure payments.",
+    title: "Witsberry - A Futuristic Portfolio & Marketing Site",
+
+    description: "A modern, scalable, full-stack app using Next.js and Strapi (headless CMS) for a Software Company",
+
     image: "/assets/project3.png",
-    link: "#",
-    github: "#",
-    technologies: ["React", "Node.js", "MongoDB", "Tailwind"]
+    link: "https://www.witsberry.com/",
+    github: "",
+    technologies: ["Next.js", "Strapi", "TypeScript", "Tailwind", "React", "Framer", "MySQL"]
+
   }
 ];
 
