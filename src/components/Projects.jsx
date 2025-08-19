@@ -37,6 +37,17 @@ const projects = [
     github: "",
     technologies: ["Next.js", "Strapi", "TypeScript", "Tailwind", "React", "Framer", "MySQL"]
 
+  },
+  {
+    id: 4,
+    title: "Invoture",
+
+    description: "Invoture is a web-based invoice generator application with beautiful templates and easy-to-use features.",
+    image: "/assets/project4.png",
+    link: "https://invoture.vercel.app/",
+    github: "https://github.com/MhmdMaazin/invoture",
+    technologies: ["Next.js", "TypeScript", "Tailwind", "React", "Zod"]
+
   }
 ];
 
