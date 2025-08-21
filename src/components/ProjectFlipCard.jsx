@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import { cn } from '@/lib/utils';
 import { motion } from 'framer-motion';
-import { FaJs, FaReact, FaNodeJs, FaPython, FaDatabase, FaGithub } from "react-icons/fa";
-import { RiNextjsFill, RiTailwindCssFill } from "react-icons/ri";
-import { SiTypescript, SiFirebase, SiVite, SiZod, SiDrizzle, SiStrapi, SiMysql } from "react-icons/si";
+import { FaJs, FaReact, FaNodeJs, FaPython, FaDatabase, FaGithub, FaLaravel } from "react-icons/fa";
+import { RiNextjsFill, RiTailwindCssFill, RiPhpFill } from "react-icons/ri";
+import { SiTypescript, SiFirebase, SiVite, SiZod, SiDrizzle, SiStrapi, SiMysql, SiFilament  } from "react-icons/si";
 import { FiFramer } from "react-icons/fi";
 import { TbWorld } from "react-icons/tb";
 
@@ -13,6 +13,7 @@ export default function ProjectFlipCard({ project, index }) {
   const techIcons = {
     "React": <FaReact size={16} />,
     "TypeScript": <SiTypescript size={16} />,
+    "Laravel": <FaLaravel size={16} />,
     "Node.js": <FaNodeJs size={16} />,
     "Firebase": <SiFirebase size={16} />,
     "Vite": <SiVite size={16} />,
@@ -25,7 +26,9 @@ export default function ProjectFlipCard({ project, index }) {
     "Framer": <FiFramer size={16} />,
     "Drizzle": <SiDrizzle size={16} />,
     "Strapi": <SiStrapi size={16} />,
-    "MySQL": <SiMysql size={16} />
+    "MySQL": <SiMysql size={16} />,
+    "Filament": <SiFilament size={16} />,
+    "PHP": <RiPhpFill size={16} />,
   };
 
   return (
@@ -104,18 +107,18 @@ export default function ProjectFlipCard({ project, index }) {
               
               <div className="relative z-10 flex-1 space-y-4 flex flex-col">
               <div>
-                <h2 className="font-extrabold text-3xl lg:text-5xl text-primary mb-2">
+                <h2 className="font-extrabold text-2xl lg:text-4xl text-primary mb-2">
                   {String(project.id).padStart(2, "0")}
                 </h2>
                 <h3 className="text-xl font-bold text-zinc-900 dark:text-white mb-2">
                   {project.title}
                 </h3>
-                <p className="font-light text-sm/6 lg:text-base text-[#71717A] dark:text-zinc-400 mb-4">
+                <p className="font-light text-xs/6 lg:text-sm text-[#71717A] dark:text-zinc-400 mb-4">
                   {project.description}
                 </p>
                 
                 {/* Technologies */}
-                <div className="mb-4">
+                <div className="mb-2">
                   <h4 className="text-sm font-semibold text-zinc-900 dark:text-white mb-2">Technologies Used:</h4>
                   <div className="flex flex-wrap gap-2">
                     {project.technologies?.map((tech, idx) => (
@@ -127,7 +130,7 @@ export default function ProjectFlipCard({ project, index }) {
                 </div>
               </div>
               
-              <div className="mt-auto pt-4">
+              <div className="mt-auto">
                   {/* <div className="mb-4">
                     <h4 className="text-sm font-semibold text-zinc-900 dark:text-white mb-2">Technologies Used:</h4>
                     <div className="flex flex-wrap gap-2">

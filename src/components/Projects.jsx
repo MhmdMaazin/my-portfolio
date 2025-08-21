@@ -11,19 +11,18 @@ const projects = [
     github: "https://github.com/MhmdMaazin/CHEM-LAB",
     technologies: ["React", "TypeScript", "Node.js", "Firebase", "Vite", "Tailwind", "Python"]
 
-
-
-
   },
   {
     id: 2,
-    title: "Game Grabber - Free Game Tracker",
-    description: "Retro-themed web app showing real-time free game giveaways from multiple platforms via API.",
+    title: "MyGulu - Multi-tenant e-commerce platform for local vendors",
+    description: "An e-commerce platform builder that lets create, customize and manage their own online store website. Built with Laravel (backend) and Next.js (frontend).",
+
 
     image: "/assets/project2.png",
-    link: "https://game-grabber.vercel.app/",
-    github: "https://github.com/MhmdMaazin/Game-Grabber",
-    technologies: ["Next.js", "TypeScript", "Zod", "Tailwind", "React", "Framer", "Drizzle"]
+    link: "http://mygulu.com/store",
+    github: "",
+    technologies: ["Laravel", "Filament", "Next.js", "TypeScript", "PHP", "Tailwind", "MySQL"]
+
 
   },
   {
@@ -40,10 +39,21 @@ const projects = [
   },
   {
     id: 4,
-    title: "Invoture",
+    title: "Game Grabber - Free Game Tracker",
+    description: "Retro-themed web app showing real-time free game giveaways from multiple platforms via API.",
+
+    image: "/assets/project4.png",
+    link: "https://game-grabber.vercel.app/",
+    github: "https://github.com/MhmdMaazin/Game-Grabber",
+    technologies: ["Next.js", "TypeScript", "Zod", "Tailwind", "React", "Framer", "Drizzle"]
+
+  },
+  {
+    id: 5,
+    title: "Invoture - An Invoice Generator",
 
     description: "Invoture is a web-based invoice generator application with beautiful templates and easy-to-use features.",
-    image: "/assets/project4.png",
+    image: "/assets/project5.png",
     link: "https://invoture.vercel.app/",
     github: "https://github.com/MhmdMaazin/invoture",
     technologies: ["Next.js", "TypeScript", "Tailwind", "React", "Zod"]
