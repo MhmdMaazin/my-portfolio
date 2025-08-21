@@ -65,8 +65,8 @@ export default function Navbar() {
         </ul>
 
         <motion.a
-          href="/assets/Maazin_CV_SE.pdf"
-          download="Maazin_CV_SE.pdf"
+          href="/assets/Maazin_CV.pdf"
+          download="Maazin_CV.pdf"
           className="hidden relative lg:inline-block px-4 py-2 font-medium group"
         >
           <span className="absolute inset-0 w-full h-full transition duration-200 ease-out transform translate-x-1 translate-y-1 bg-black group-hover:-translate-x-0 group-hover:-translate-y-0"></span>
@@ -114,8 +114,8 @@ export default function Navbar() {
                 </motion.li>
               ))}
               <motion.a
-                href="/assets/Maazin_CV_SE.pdf"
-                download="Maazin_CV_SE.pdf"
+                href="/assets/Maazin_CV.pdf"
+                download="Maazin_CV.pdf"
                 className="relative inline-block px-4 py-2 font-semibold group"
                 whileHover={{ scale: 1.1 }}
               >
