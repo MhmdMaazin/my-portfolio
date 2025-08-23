@@ -14,7 +14,7 @@ const projects = [
   },
   {
     id: 2,
-    title: "MyGulu - Multi-tenant e-commerce platform for local vendors",
+    title: "MyGulu - Multi-tenant SaaS e-commerce platform for local vendors",
     description: "An e-commerce platform builder that lets create, customize and manage their own online store website. Built with Laravel (backend) and Next.js (frontend).",
 
 
@@ -57,6 +57,16 @@ const projects = [
     link: "https://invoture.vercel.app/",
     github: "https://github.com/MhmdMaazin/invoture",
     technologies: ["Next.js", "TypeScript", "Tailwind", "React", "Zod"]
+
+  },
+  {
+    id: 6,
+    title: "Construction Lead Management Portal",
+    description: "A construction lead management portal for construction companies to manage their leads, clients, and projects.",
+    image: "/assets/project6.png",
+    link: "https://lead-man-portal.vercel.app/",
+    github: "https://github.com/MhmdMaazin/lead-management-portal",
+    technologies: ["Next.js", "JavaScript", "Tailwind", "React", "MongoDB"]
 
   }
 ];

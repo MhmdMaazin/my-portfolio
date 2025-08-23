@@ -1,8 +1,9 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
-import { FaJs, FaReact, FaNodeJs, FaPython, FaDatabase } from "react-icons/fa";
+import { FaJs, FaReact, FaNodeJs, FaPython } from "react-icons/fa";
 import { RiNextjsFill,RiTailwindCssFill } from "react-icons/ri";
-import { SiTypescript,SiStrapi,SiLaravel  } from "react-icons/si";
+import { SiTypescript,SiStrapi,SiLaravel,SiFilament,SiMongodb,SiFirebase,SiZod,SiPrisma,SiMysql  } from "react-icons/si";
+
 
 export default function Skills() {
   const [skills] = useState([
@@ -11,11 +12,16 @@ export default function Skills() {
     { id: 3, name: "React", icon: <FaReact size={50} /> },
     { id: 4, name: "Node.js", icon: <FaNodeJs size={50} /> },
     { id: 5, name: "Python", icon: <FaPython size={50} /> },
-    { id: 6, name: "MongoDB", icon: <FaDatabase size={50} /> },
-    { id: 7, name: "Strapi CMS", icon: <SiStrapi size={50} /> },
-    { id: 8,  name: "JavaScript", icon: <FaJs size={50} /> },
-    { id: 9, name: "Tailwind", icon: <RiTailwindCssFill size={50} /> },
-    { id: 10, name: "Laravel", icon: <SiLaravel size={50} /> },
+    { id: 6, name: "MongoDB", icon: <SiMongodb size={50} /> },
+    { id: 7, name: "Firebase", icon: <SiFirebase size={50} /> },
+    { id: 8, name: "Strapi CMS", icon: <SiStrapi size={50} /> },
+    { id: 9,  name: "JavaScript", icon: <FaJs size={50} /> },
+    { id: 10, name: "Tailwind", icon: <RiTailwindCssFill size={50} /> },
+    { id: 11, name: "Laravel", icon: <SiLaravel size={50} /> },
+    { id: 12, name: "Filament", icon: <SiFilament size={50} /> },
+    { id: 13, name: "MySQL", icon: <SiMysql size={50} /> },
+    { id: 14, name: "Zod", icon: <SiZod size={50} /> },
+    { id: 15, name: "Prisma", icon: <SiPrisma size={50} /> },
   ]);
 
   const [experiences] = useState([

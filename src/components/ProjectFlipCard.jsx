@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import { cn } from '@/lib/utils';
 import { motion } from 'framer-motion';
-import { FaJs, FaReact, FaNodeJs, FaPython, FaDatabase, FaGithub, FaLaravel } from "react-icons/fa";
+import { FaJs, FaReact, FaNodeJs, FaPython, FaGithub, FaLaravel } from "react-icons/fa";
 import { RiNextjsFill, RiTailwindCssFill, RiPhpFill } from "react-icons/ri";
-import { SiTypescript, SiFirebase, SiVite, SiZod, SiDrizzle, SiStrapi, SiMysql, SiFilament  } from "react-icons/si";
+import { SiTypescript, SiFirebase, SiVite, SiZod, SiDrizzle, SiStrapi, SiMysql, SiFilament, SiMongodb  } from "react-icons/si";
 import { FiFramer } from "react-icons/fi";
 import { TbWorld } from "react-icons/tb";
 
@@ -17,7 +17,7 @@ export default function ProjectFlipCard({ project, index }) {
     "Node.js": <FaNodeJs size={16} />,
     "Firebase": <SiFirebase size={16} />,
     "Vite": <SiVite size={16} />,
-    "MongoDB": <FaDatabase size={16} />,
+    "MongoDB": <SiMongodb size={16} />,
     "Next.js": <RiNextjsFill size={16} />,
     "Python": <FaPython size={16} />,
     "Tailwind": <RiTailwindCssFill size={16} />,
