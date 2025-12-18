@@ -20,7 +20,7 @@
     "cn": "^0.1.1",
     "cobe": "^0.6.4",
     "emailjs-com": "^3.2.0",
-    "framer-motion": "^12.23.12",
+    "framer-motion": "^12.23.26",
     "lucide-react": "^0.536.0",
     "react": "^19.1.1",
     "react-dom": "^19.1.1",

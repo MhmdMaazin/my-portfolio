@@ -6,7 +6,7 @@ export default function About() {
   const aboutContent = `
 I'm Mohammed **Maazin**, a passionate and dedicated **Computer** **Science** Student with a strong interest in web development, artificial intelligence, and problem-solving.
 
-My web development journey started in **2021**, and since then, I've continuously evolved, taking on new challenges and keeping up with the latest technologies. Today, I build **cutting-edge web applications** using **Next.js, TypeScript, TailwindCSS, Supabase, and more**.
+My web development journey started in **2021**, and since then, I've continuously evolved, taking on new challenges and keeping up with the latest technologies. Today, I build **cutting-edge web applications** using **Next.js, TypeScript, TailwindCSS, NestJS, and more**.
 
 I'm a **fast learner** and **problem-solver** at heart. I love diving deep into complex problems and finding elegant solutions. Whether it's building web applications, optimizing algorithms, or contributing to open-source projects, I'm always up for the challenge.
 

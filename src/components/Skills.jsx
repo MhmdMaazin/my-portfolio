@@ -1,8 +1,8 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
-import { FaJs, FaReact, FaNodeJs, FaPython } from "react-icons/fa";
+import { FaJs, FaReact, FaNodeJs, FaPython, FaAws } from "react-icons/fa";
 import { RiNextjsFill,RiTailwindCssFill } from "react-icons/ri";
-import { SiTypescript,SiStrapi,SiLaravel,SiFilament,SiMongodb,SiFirebase,SiZod,SiPrisma,SiMysql  } from "react-icons/si";
+import { SiTypescript,SiStrapi,SiLaravel,SiFilament,SiMongodb,SiFirebase,SiZod,SiPrisma,SiMysql,SiPostgresql,SiNestjs,SiAppwrite,SiHostinger  } from "react-icons/si";
 
 
 export default function Skills() {
@@ -11,17 +11,22 @@ export default function Skills() {
     { id: 2, name: "TypeScript", icon: <SiTypescript size={50} /> },
     { id: 3, name: "React", icon: <FaReact size={50} /> },
     { id: 4, name: "Node.js", icon: <FaNodeJs size={50} /> },
-    { id: 5, name: "Python", icon: <FaPython size={50} /> },
-    { id: 6, name: "MongoDB", icon: <SiMongodb size={50} /> },
-    { id: 7, name: "Firebase", icon: <SiFirebase size={50} /> },
-    { id: 8, name: "Strapi CMS", icon: <SiStrapi size={50} /> },
-    { id: 9,  name: "JavaScript", icon: <FaJs size={50} /> },
-    { id: 10, name: "Tailwind", icon: <RiTailwindCssFill size={50} /> },
-    { id: 11, name: "Laravel", icon: <SiLaravel size={50} /> },
-    { id: 12, name: "Filament", icon: <SiFilament size={50} /> },
-    { id: 13, name: "MySQL", icon: <SiMysql size={50} /> },
-    { id: 14, name: "Zod", icon: <SiZod size={50} /> },
-    { id: 15, name: "Prisma", icon: <SiPrisma size={50} /> },
+    { id: 5, name: "Nest.js", icon: <SiNestjs size={50} /> },
+    { id: 6, name: "Laravel", icon: <SiLaravel size={50} /> },
+    { id: 7, name: "MySQL", icon: <SiMysql size={50} /> },
+    { id: 8, name: "PostgreSQL", icon: <SiPostgresql size={50} /> },
+    { id: 9, name: "Python", icon: <FaPython size={50} /> },
+    { id: 10, name: "MongoDB", icon: <SiMongodb size={50} /> },
+    { id: 11, name: "Firebase", icon: <SiFirebase size={50} /> },
+    { id: 12, name: "Strapi CMS", icon: <SiStrapi size={50} /> },
+    { id: 13, name: "JavaScript", icon: <FaJs size={50} /> },
+    { id: 14, name: "Tailwind", icon: <RiTailwindCssFill size={50} /> },
+    { id: 15, name: "Filament", icon: <SiFilament size={50} /> },
+    { id: 16, name: "Zod", icon: <SiZod size={50} /> },
+    { id: 17, name: "Prisma", icon: <SiPrisma size={50} /> },
+    { id: 18, name: "Appwrite", icon: <SiAppwrite size={50} /> },
+    { id: 19, name: "AWS", icon: <FaAws size={50} /> },
+    { id: 20, name: "Hostinger", icon: <SiHostinger size={50} /> },
   ]);
 
   const [experiences] = useState([
@@ -29,20 +34,20 @@ export default function Skills() {
       id: 1,
       company: "Witsberry",
       role: "Intern Software Engineer",
-      period: "May 2025 - Present",
+      period: "April 2025 - September 2025",
       description:
         "Built a modern, SEO-friendly software company website using Next.js, TypeScript, and Strapi for better performance and content management. Also developed a SaaS e-commerce platform with Laravel, Filament, and Next.js (TypeScript) to help rural and local shop owners easily create and manage their own online stores. The platform supports multi-tenancy, custom branding, and real-time updates, with a focus on modular design, smooth UX, and full responsiveness for all devices.",
       logo: "/assets/wits.png",
     },
-    // {
-    //   id: 2,
-    //   company: "Youtube",
-    //   role: "Software Engineer",
-    //   period: "Jan 2017 - Oct 2019",
-    //   description:
-    //     "At Youtube, I served as a  Software Engineer, focusing on the design and implementation of backend systems for the social media giant's dynamic platform. Working on projects that involved large-scale data processing and user engagement features, I leveraged my expertise to ensure seamless functionality and scalability.",
-    //   logo: "/assets/youtube.svg",
-    // },
+    {
+      id: 2,
+      company: "Portal (PVT) Ltd.",
+      role: "Full Stack Developer",
+      period: "September 2025 - Present",
+      description:
+        "Developed RESTful APIs in Next.js using Appwrite as the backend service to power a cross-platform Flutter app for employee management. Designed and built a full-stack test-suite management web application in Next.js that allows QA teams to create, organize, and execute test cases, track results, and generate reports in real time. Implemented a shared NestJS backend that serves both the web dashboard and mobile apps, handling request validation, business logic, and seamless database integration.",
+      logo: "/assets/prtl.png",
+    },
   ]);
 
   return (
