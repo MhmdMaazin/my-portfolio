@@ -68,6 +68,15 @@ const projects = [
     github: "https://github.com/MhmdMaazin/lead-management-portal",
     technologies: ["Next.js", "JavaScript", "Tailwind", "React", "MongoDB"]
 
+  },
+  {
+    id: 7,
+    title: "TalentScout AI -Powered Recruitment Platform",
+    description: "AI recruiter that reads resumes like a human, compares candidates side-by-side, masks bias, preps custom interviews, and fires off personalized emails—turning hours of hiring into minutes.",
+    image: "/assets/project7.png",
+    link: "https://talentscout-ai.vercel.app/",
+    github: "https://github.com/MhmdMaazin/TalentScout-AI",
+    technologies: ["Vite", "Gemini", "React", "TypeScript", "Tailwind"]
   }
 ];
 
