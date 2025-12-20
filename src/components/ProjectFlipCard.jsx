@@ -3,7 +3,7 @@ import { cn } from '@/lib/utils';
 import { motion } from 'framer-motion';
 import { FaJs, FaReact, FaNodeJs, FaPython, FaGithub, FaLaravel } from "react-icons/fa";
 import { RiNextjsFill, RiTailwindCssFill, RiPhpFill } from "react-icons/ri";
-import { SiTypescript, SiFirebase, SiVite, SiZod, SiDrizzle, SiStrapi, SiMysql, SiFilament, SiMongodb, SiGooglegemini  } from "react-icons/si";
+import { SiTypescript, SiFirebase, SiVite, SiZod, SiDrizzle, SiStrapi, SiMysql, SiFilament, SiMongodb, SiGooglegemini, SiAppwrite  } from "react-icons/si";
 import { FiFramer } from "react-icons/fi";
 import { TbWorld } from "react-icons/tb";
 
@@ -30,6 +30,7 @@ export default function ProjectFlipCard({ project, index }) {
     "Filament": <SiFilament size={16} />,
     "PHP": <RiPhpFill size={16} />,
     "Gemini": <SiGooglegemini size={16} />,
+    "Appwrite": <SiAppwrite size={16} />,
   };
 
   return (

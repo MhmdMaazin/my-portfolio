@@ -77,6 +77,15 @@ const projects = [
     link: "https://talentscout-ai.vercel.app/",
     github: "https://github.com/MhmdMaazin/TalentScout-AI",
     technologies: ["Vite", "Gemini", "React", "TypeScript", "Tailwind"]
+  },
+  {
+    id: 8,
+    title: "ClosetClear AI - Your Smart Wardrobe Assistant",
+    description: "An AI-powered full stack platform to help you organize your wardrobe, get outfit recommendations,manage your clothing inventory, and monetize unworn clothing.",
+    image: "/assets/project8.png",
+    link: "https://closetclear-ai.vercel.app/",
+    github: "https://github.com/MhmdMaazin/closetclear",
+    technologies: ["React", "Appwrite", "TypeScript", "Tailwind", "Gemini", "Vite", "Framer", "Node.js"]
   }
 ];
 
